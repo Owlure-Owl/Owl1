@@ -77,14 +77,13 @@ header {
 }
 
 .product-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;                        /* ← вертикаль 30px, горизонталь 20px */
 }
 
 .card {
-  width: 30%;
+    width: calc((100% - 40px) / 3);        /* ← (100% − 2 зазора) / 3 колонки */
 }
 
 .card-img {
@@ -97,7 +96,7 @@ header {
 .card-name {
   font-size: 20px;
   font-weight: 600;
-  margin: 0 0 8px 0;
+  margin: 0 0px 8px 0;
 }
 
 .card-desc {
